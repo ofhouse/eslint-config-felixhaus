@@ -21,4 +21,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - npx -p semantic-release@15 -c "semantic-release --prepare && npm publish && semantic-release --success"
+    - npx -p semantic-release@15
