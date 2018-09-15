@@ -21,4 +21,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - npx -p semantic-release@15
+    - npx -p semantic-release@15 -c "semantic-release"
