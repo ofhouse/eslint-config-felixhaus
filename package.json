@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-felixhaus",
+  "version": "0.0.0-development",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ofhouse/eslint-config-felixhaus.git"
+  },
+  "author": "Felix Haus <felixhaus@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "dependencies": {
+    "babel-eslint": "9.0.0",
+    "eslint-config-prettier": "3.0.1",
+    "eslint-plugin-react": "7.11.1"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.9.15"
+  }
+}
