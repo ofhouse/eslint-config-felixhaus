@@ -4,6 +4,14 @@ language: node_js
 
 node_js: 8
 
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only: master
+
+# Build steps
 install:
   - npm install
 
@@ -11,12 +19,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - npx semantic-release
-
-notifications:
-  email: false
-install: npm install
-script:
-  - npx -p semantic-release@15 -c "semantic-release --prepare && npm publish && semantic-release --success"
-branches:
-  only: master
+    - npx -p semantic-release@15 -c "semantic-release --prepare && npm publish && semantic-release --success"
