@@ -1,5 +1,6 @@
 module.exports = {
-  extends: ['prettier/react'],
+  extends: ['prettier/react', 'plugin:flowtype/recommended'],
+  parser: 'babel-eslint',
   env: {
     browser: true,
   },
@@ -8,5 +9,10 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['react'],
+  settings: {
+    flowtype: {
+      onlyFilesWithFlowAnnotation: true,
+    },
+  },
+  plugins: ['react', 'flowtype'],
 };
